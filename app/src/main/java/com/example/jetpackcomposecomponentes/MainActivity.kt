@@ -36,7 +36,6 @@ import androidx.compose.material.OutlinedButton
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.RadioButton
 import androidx.compose.material.RadioButtonDefaults
-import androidx.compose.material.Surface
 import androidx.compose.material.Switch
 import androidx.compose.material.SwitchDefaults
 import androidx.compose.material.Text
@@ -64,16 +63,6 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavType
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navArgument
-import com.example.jetpackcomposecomponentes.model.Routes
-import com.example.jetpackcomposecomponentes.navigation.ScreenFour
-import com.example.jetpackcomposecomponentes.navigation.ScreenOne
-import com.example.jetpackcomposecomponentes.navigation.ScreenThree
-import com.example.jetpackcomposecomponentes.navigation.ScreenTwo
 import com.example.jetpackcomposecomponentes.ui.theme.JetpackComposeComponentesTheme
 
 class MainActivity : ComponentActivity() {
@@ -81,7 +70,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             JetpackComposeComponentesTheme {
-                CrossFadeAnimation()
+                ConstrainExampleChain()
+            //CrossFadeAnimation()
                 //VisibilityAnimation()
                 //SizeAnimation()
             //ColorAnimation()
